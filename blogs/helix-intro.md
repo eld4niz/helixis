@@ -14,7 +14,7 @@ This article will include:
 - Usage of Themes
 - Few tips about Helix
 
----
+<br>
 
 ## Buffers
 
@@ -42,7 +42,7 @@ If you use `!` with any closing command it will ignore the changes and closes bu
 - `g + p` - previous buffer
 - `g + n` - next buffer
 
----
+<br>
 
 ## Windows
 
@@ -62,7 +62,8 @@ You have to press `Ctrl + w` before using any window related keybindings.
 - `Ctrl + v` - split the window vertically
 - `Ctrl + s` - split the window horizontally
 
----
+<br>
+
 ## Copy and Pasting
 
 Copying in Helix is similar to other editors. We can use `space + y` key to copy the selected text. We can copy a single line or multiple lines.
@@ -83,7 +84,7 @@ Copying in Helix is similar to other editors. We can use `space + y` key to copy
 - `space + p` - paste the copied text after the cursor
 - `space + P` - paste the copied text before the cursor
 
----
+<br>
 
 ## Searching
 
@@ -97,7 +98,8 @@ Search commands all operate on the `/` register by default.
 `N` - select the previous search match
 `*` - use the current selection as the search pattern
 
----
+<br>
+
 ## Themes
 
 Helix has a few themes that you can use. You can set the theme in the config.toml file.
@@ -110,9 +112,11 @@ Helix has a few themes that you can use. You can set the theme in the config.tom
 You can also set up your favorite theme based on your preference. Check it out:
 
 [Original Themes from Helix](https://github.com/helix-editor/helix/wiki/Themes)
+
 [Custom theme](https://github.com/CptPotato/helix-themes)
 
----
+<br>
+
 ## Few tips about config.toml file
 
 ### keybinding
@@ -127,9 +131,13 @@ If you want to use `/` as keybinding you have to use it inside of string as `7`.
 
 https://github.com/helix-editor/helix/issues/3210
 
+<br>
+
 ### finding commands or keybindings
 
 Just by clicking `Space + ?` will show you fuzzy finder that you can find any command/keybinding with basic searching of your keyword
+
+<br>
 
 ### cleaning your fuzzy finder
 
@@ -137,7 +145,8 @@ For example, let's say you're working with Django project and you have your own 
 
 In that case, you just have to create a file named `.ignore`. It will work the same as `.gitignore`. It will ignore the files from the fuzzy finder, and your finder will be cleaner.
 
----
+<br>
+
 ## Conclusion
 
 Thank you for your time. Helix documentation/configuration are pretty simple and straightforward, but I wanted to share some useful tips and tricks that I have learned while using Helix.
