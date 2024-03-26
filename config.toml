@@ -1,0 +1,72 @@
+theme = "ayu_dark"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-completion=true
+auto-save=true
+auto-format=true
+text-width=80
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+bufferline = "always"
+
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator", "read-only-indicator"]
+center = ["file-name"]
+right = ["diagnostics", "register", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "LOCKED"
+mode.insert = "EDITING"
+mode.select = "VISUAL SEL"
+
+
+[editor.lsp]
+enable=true
+auto-signature-help=true
+display-messages = true
+
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
+
+
+[keys.normal]
+C-r = ":w" # Ctrl + r to save/write
+
+# movement with wasd keys
+w = "move_line_up"
+a = "move_char_left"
+
+
+# select chars with shift + wasd
+C-w = "extend_line_up"
+C-a = "extend_char_left"
+C-s = "extend_line_down"
+C-d = "extend_char_right"
+
+# assign Ctrl+"/" to comment and Ctrl+c to save/write
+"C-7" = "toggle_comments"
+C-c = "yank_to_clipboard"
+g = { a = "code_action" }
+
+# write and quit
+C-q = ":wq"
+
+[keys.insert]
+
+# for me saving while editing is important, so I'll assign writing the file on here too
+C-r = ":w"
+
+# selecting text
+C-w = "extend_line_up"
+C-a = "extend_char_left"
+C-s = "extend_line_down"
+C-d = "extend_char_right"
+
+
+# assign comment and write to same as normal mode
+"C-7" = "toggle_comments"
+C-c = "yank_to_clipboard"
